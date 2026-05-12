@@ -6,6 +6,8 @@ metadata:
     region: us-east-1
 managedNodeGroups:
   - name: roboshop-dev
-    spot: true
     instanceTypes: ["t3.medium"]
-    capacityType: SPOT
+    desiredCapacity: 2
+    minSize: 2
+    maxSize: 3
+    spot: false
